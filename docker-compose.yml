@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_RANDOM_ROOT_PASSWORD: "yes"
+      POSTGRES_DB: "kylon"
+      POSTGRES_USER: "kylon"
+      POSTGRES_PASSWORD: "kylon0"
+    ports:
+      - "5432:5432"
